@@ -1,0 +1,120 @@
+body{
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    /*border-style: solid;*/
+    position: absolute;
+}
+
+.container{
+    border-style: none;
+}
+
+.pos-topRight,
+.pos-bottomRight,
+.pos-middleRight  {
+    text-align: right;
+}
+
+#pos-topRight,
+#pos-bottomRight,
+#pos-middleRight {
+    right:0; 
+}
+
+
+.pos-topMiddle,
+.pos-topRight{
+    top: 0;
+    width: 30%;
+    height: 20%;
+}
+
+
+.pos-middleRight,
+.pos-middleMiddle{
+    bottom: 55%;
+    width: 30%;
+    height: 20%;
+}
+
+
+.pos-bottomLeft{
+    left: 0;
+    bottom: 30%;
+    width: 30%;
+    height: 40%; 
+}
+.pos-bottomRight,
+.pos-bottomMiddle{
+    bottom: 30%;
+    width: 30%;
+    height: 20%;
+}
+
+
+.pos-topLeft{
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 25%;
+}
+
+
+.pos-topRight,
+.pos-middleRight,
+.pos-bottomRight{
+    right: 0;
+}
+
+.pos-topMiddle,
+.pos-middleMiddle,
+.pos-bottomMiddle{
+    left: 35%;
+}
+
+.pos-bottomFull{
+    bottom: 0%;
+    width: 99.5%;
+    height: 25%;
+    left: 0;
+}
+
+
+.pos-bottomLeft{
+    border-color: aliceblue;
+}
+.pos-bottomMiddle{
+    border-color: blueviolet;
+}
+
+.pos-bottomRight{
+    border-color: brown;
+}
+
+.pos-topLeft{
+    border-color: burlywood;
+}
+
+.pos-topMiddle{
+    border-color: chartreuse;
+}
+
+.pos-topRight{
+    border-color: cornflowerblue; 
+}
+
+.pos-middleMiddle{
+    border-color: darkolivegreen;
+}
+
+.pos-middleRight{
+    border-color: olive;
+}
+
+.pos-bottomFull{
+    border-color: navy;
+}

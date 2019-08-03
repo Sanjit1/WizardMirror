@@ -1,0 +1,27 @@
+{
+  "name": "magicmirror",
+  "version": "1.0.0",
+  "description": "Magic Mirror",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "browserify apphandle.js -o bundle.js"
+  },
+  "keywords": [
+    "Magic",
+    "Mirror",
+    "Smart"
+  ],
+  "author": "Sanjit Sarda",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^6.0.0"
+  },
+  "dependencies": {
+    "howler": "^2.1.2",
+    "jsonfile": "^5.0.0",
+    "node-wit": "^5.0.0",
+    "save": "^2.4.0",
+    "speech-to-text": "^2.9.1"
+  }
+}

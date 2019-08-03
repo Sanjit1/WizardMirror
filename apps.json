@@ -1,0 +1,6 @@
+{"apps":[
+    {"name":"Edith", "file":"apps/edith.js"},
+    {"name":"Weather", "file":"apps/currentWeather.js"},
+    {"name":"Fit", "file":"apps/fit.js"},
+    {"name":"Time", "file":"apps/time.js"}
+]}

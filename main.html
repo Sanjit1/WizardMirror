@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Magic Mirror</title>
+
+
+</head>
+
+<body>
+    <div class="pos-topLeft">
+        <div id="pos-topLeft"></div>
+    </div>
+    <div class="pos-topMiddle">
+        <div id="pos-topMiddle"></div>
+    </div>
+    <div class="pos-topRight">
+        <div id="pos-topRight"></div>
+    </div>
+
+    <div class="pos-middleMiddle">
+        <div id="pos-middleMiddle"></div>
+    </div>
+    <div class="pos-middleRight">
+        <div id="pos-middleRight"></div>
+    </div>
+
+    <div class="pos-bottomLeft">
+        <div id="pos-bottomLeft"></div>
+    </div>
+    <div class="pos-bottomMiddle">
+        <div id="pos-bottomMiddle"></div>
+    </div>
+    <div class="pos-bottomRight">
+        <div id="pos-bottomRight"></div>
+    </div>
+
+    <div class="pos-bottomFull">
+        <div id="pos-bottomFull"></div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+        const jsonfile = require('jsonfile');
+        jsonfile.readFile("apps.json", function (err, obj) {
+            if (err) console.error(err);
+            const appList = obj.apps;
+            for (let i = 0; i < appList.length; i++) {
+                var script = document.createElement('script'); script.type = 'text/javascript';
+                script.src = appList[i].file;
+                document.body.appendChild(script);
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
+
+<!--
+    <div class="pos-"><div class="container"></div></div>
+-->
