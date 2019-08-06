@@ -4,8 +4,7 @@
   "description": "Magic Mirror",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "browserify apphandle.js -o bundle.js"
+    "start": "electron ."
   },
   "keywords": [
     "Magic",
