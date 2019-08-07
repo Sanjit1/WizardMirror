@@ -17,11 +17,15 @@ var seconds = date.getSeconds();
 var dateWrite = day + ', ' + month + ' ' + dateNumb + ', ' + year;
 var timeWrite = hours + ":" + minutes;
 
-var timeText = document.createElement("h1");
-timeDiv.appendChild(timeText);
-var dateText = document.createElement("h1");
-timeDiv.appendChild(dateText);
+var fonts = document.createElement('link');
+fonts.href = "<link href=\"https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap\" rel=\"stylesheet\">";
+fonts.rel = "stylesheet";
+document.head.appendChild(fonts);
 
+var dateText = document.createElement("h1"); dateText.id = "dateTime";
+timeDiv.appendChild(dateText);
+var timeText = document.createElement("h1"); timeText.id = "timeText";
+timeDiv.appendChild(timeText);
 
 update();
 
@@ -39,7 +43,7 @@ function update() {
     var timeString = hours+":"+(minutes>9?minutes:"0"+minutes)+(showSeconds?":"+(seconds>9?seconds:"0"+seconds):"")+(twentyFourHourClock?"":(date.getHours()>11?"PM":"AM"));
     timeText.innerHTML = "";
     timeText.appendChild(document.createTextNode(timeString));
-    var dateString = day+", " + month + " " + dateNumb+"<sup>"+(dateNumb===1?"st":(dateNumb===2)?"nd":(dateNumb===3)?"rd":"th")+"</sup>, "+ year;
+    var dateString = day+", " + month + " " + dateNumb+", "+ year;
     dateText.innerHTML = "";
     dateText.innerHTML = dateString;
     setTimeout(arguments.callee, 10); // Loop every 10 milliseconds

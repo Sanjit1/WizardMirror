@@ -1,7 +1,4 @@
 {"apps":[
-    {"name":"Edith", "file":"apps/edith.js"},
-    {"name":"Weather", "file":"apps/currentWeather.js"},
-    {"name":"Fit", "file":"apps/fit.js"},
-    {"name":"StartStop", "file":"apps/voiceStartAndStop.js"},
-    {"name":"Time", "file":"apps/time.js"}
+    {"name":"Weather", "file":"apps/currentWeather.js", "css":"apps/weather.css"},
+    {"name":"Time", "file":"apps/time.js", "css":"apps/time.css"}
 ]}

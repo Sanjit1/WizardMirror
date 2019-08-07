@@ -1,23 +1,18 @@
 body{
     background: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 div{
     /*border-style: solid;*/
     position: absolute;
+    text-align: center;
 }
 
 .container{
     border-style: none;
 }
 
-.pos-topRight,
-.pos-bottomRight,
-.pos-middleRight  {
-    text-align: right;
-}
 
 #pos-topRight,
 #pos-bottomRight,
