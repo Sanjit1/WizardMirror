@@ -1,6 +1,6 @@
 // Config options
 const timeDiv = document.getElementById("pos-topLeft");
-const showSeconds = true;
+const showSeconds = false;
 const twentyFourHourClock = false;
 
 // Actual Code
