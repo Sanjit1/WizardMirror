@@ -6,7 +6,7 @@ const cityId = "5391832"; // refer to city.list.json, to find your city ID
 
 //Actual code
 var weatherIcon = document.createElement("img");
-var city, temp, pressure, humidity, temp_min, hhh, temp_max, bbb;
+var city, temp, pressure, humidity, temp_min, icon, temp_max;
 
 
 update();
@@ -14,21 +14,30 @@ update();
 
 function update() {
     $.getJSON("http://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=" + weatherApiKey, function (data) {
-        console.dir(data);
-        bbb = data;
-        hhh = data["weather"][0]["icon"];
-        weatherIcon.src = "apps/currentWeather/" + hhh + ".png";
+        // console.dir(data);
+        icon = data["weather"][0]["icon"];
         temp = kToUnit(data["main"]["temp"]);
         pressure = data["main"]["pressure"];
         humidity = data["main"]["humidity"];
         temp_max = kToUnit(data["main"]["temp_max"]);
         temp_min = kToUnit(data["main"]["temp_min"]);
         city = data["name"];
+
         weatherDiv.innerHTML = "";
-        ggg = document.createElement("h1");
-        ggg.innerHTML = temp + String.fromCharCode(176) + "C <br>humid = " + humidity + "<br> tempMin" + temp_min + "<br> tempMax" + temp_max + "<br>" +city;
-        weatherDiv.appendChild(ggg);
-        weatherDiv.appendChild(weatherIcon);
+        var icoHiLoCurDiv = document.createElement('div'); icoHiLoCurDiv.id = 'icoHiLoCurDiv';
+        var iconAndHiLoDiv = document.createElement('div'); iconAndHiLoDiv.id = 'iconAndHiLoDiv';
+        var minAndMaxDiv = document.createElement('div'); minAndMaxDiv.id = 'minAndMaxDiv';
+        var minText = document.createElement('h1');  minText.id = 'minText'; minText.appendChild(document.createTextNode(temp_min));
+        var maxText = document.createElement('h1'); maxText.id = 'maxText'; maxText.appendChild(document.createTextNode(temp_max));
+        minAndMaxDiv.appendChild(minText); minAndMaxDiv.appendChild(maxText); 
+        weatherIcon.src = "apps/currentWeather/" + icon + ".png";
+        var tempText = document.createElement('h1'); tempText.id = 'tempText'; tempText.appendChild(document.createTextNode(temp + String.fromCharCode(176) + "C"));
+        iconAndHiLoDiv.appendChild(weatherIcon);  
+        iconAndHiLoDiv.appendChild(minAndMaxDiv);      
+        icoHiLoCurDiv.appendChild(iconAndHiLoDiv);
+        icoHiLoCurDiv.appendChild(tempText);
+        weatherDiv.appendChild(icoHiLoCurDiv);
+        
     });
     // display the results 
 
@@ -40,5 +49,5 @@ function update() {
 
 
 function kToUnit(k) {
-    return (tempUnit === "C" ? Math.round((k - 273.15) * 100) / 100 : (tempUnit === "F" ? Math.round((((k - 273.15) * 9 / 5) + 32) * 100) / 100 : 'Wrong Unit'));
+    return parseInt((tempUnit === "C" ? Math.round(k - 273.15) : (tempUnit === "F" ? Math.round(((k - 273.15) * 9 / 5) + 32) : 'Wrong Unit')));
 }

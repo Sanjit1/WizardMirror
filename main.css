@@ -1,12 +1,10 @@
 body{
     background: black;
-    color: white;
 }
 
 div{
     /*border-style: solid;*/
     position: absolute;
-    text-align: center;
 }
 
 .container{

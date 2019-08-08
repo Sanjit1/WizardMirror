@@ -13,12 +13,10 @@ var year = date.getFullYear();
 var dateNumb = date.getDate();
 var hours = date.getHours();
 var minutes = date.getMinutes();
-var seconds = date.getSeconds();
-var dateWrite = day + ', ' + month + ' ' + dateNumb + ', ' + year;
-var timeWrite = hours + ":" + minutes;
+var seconds = date.getSeconds(); 
 
 var fonts = document.createElement('link');
-fonts.href = "<link href=\"https://fonts.googleapis.com/css?family=Lato|Open+Sans:300&display=swap\" rel=\"stylesheet\">";
+fonts.href = "https://fonts.googleapis.com/css?family=Lato:100|Open+Sans:300&display=swap";
 fonts.rel = "stylesheet";
 document.head.appendChild(fonts);
 
@@ -26,6 +24,8 @@ var dateText = document.createElement("h1"); dateText.id = "dateTime";
 timeDiv.appendChild(dateText);
 var timeText = document.createElement("h1"); timeText.id = "timeText";
 timeDiv.appendChild(timeText);
+var ampm = document.createElement("h1"); ampm.id = "ampm";
+timeDiv.appendChild(ampm);
 
 update();
 
@@ -40,12 +40,18 @@ function update() {
     hours = (twentyFourHourClock? date.getHours():(date.getHours()>12?date.getHours()-12:(date.getHours()===0?12:date.getHours())));
     minutes = date.getMinutes();
     seconds = date.getSeconds();
-    var timeString = hours+":"+(minutes>9?minutes:"0"+minutes)+(showSeconds?":"+(seconds>9?seconds:"0"+seconds):"")+(twentyFourHourClock?"":(date.getHours()>11?"PM":"AM"));
+    var timeString = hours+":"+(minutes>9?minutes:"0"+minutes)+(showSeconds?":"+(seconds>9?seconds:"0"+seconds):"");
     timeText.innerHTML = "";
     timeText.appendChild(document.createTextNode(timeString));
     var dateString = day+", " + month + " " + dateNumb+", "+ year;
     dateText.innerHTML = "";
-    dateText.innerHTML = dateString;
+    dateText.appendChild(document.createTextNode(dateString));
+    var ampmString = (date.getHours()>11?"PM":"AM");
+    if(!twentyFourHourClock){
+        ampm.innerHTML = "";
+        ampm.appendChild(document.createTextNode(ampmString));
+    }
+    
     setTimeout(arguments.callee, 10); // Loop every 10 milliseconds
 }
 
