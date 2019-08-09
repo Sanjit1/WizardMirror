@@ -1,0 +1,61 @@
+#pos-topRight{
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#pos-topRight .iconHolder{
+    top:17px;
+}
+
+
+#pos-topRight .tempTextHolder{
+    left: 60px;
+}
+
+#pos-topRight .tempTextHolder *{
+    margin: 0;
+    font-size: 84px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    color: #BBBBBB;
+}
+
+#pos-topRight .unitHolder{
+    padding: 0;
+    left: 155px;
+    top: 15px;
+}
+
+#pos-topRight .unitHolder *{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 100;
+    color: #DDDDDD;
+}
+
+#pos-topRight .humidityHolder {
+    left: 225px;
+}
+
+#pos-topRight .humidityHolder *{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #BBBBBB;
+    
+}
+
+#pos-topRight .windHolder {
+    left: 225px;
+    top: 50px;
+}
+
+#pos-topRight .windHolder *{
+    font-family: 'Catamaran', sans-serif;    
+    font-size: 20px;
+    font-weight: 100;
+    color: #BBBBBB;
+    
+}

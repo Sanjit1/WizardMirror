@@ -15,16 +15,11 @@ var hours = date.getHours();
 var minutes = date.getMinutes();
 var seconds = date.getSeconds(); 
 
-var fonts = document.createElement('link');
-fonts.href = "https://fonts.googleapis.com/css?family=Lato:100|Open+Sans:300&display=swap";
-fonts.rel = "stylesheet";
-document.head.appendChild(fonts);
-
-var dateText = document.createElement("h1"); dateText.id = "dateTime";
+var dateText = document.createElement("h1"); dateText.className = "dateTime";
 timeDiv.appendChild(dateText);
-var timeText = document.createElement("h1"); timeText.id = "timeText";
+var timeText = document.createElement("h1"); timeText.className = "timeText";
 timeDiv.appendChild(timeText);
-var ampm = document.createElement("h1"); ampm.id = "ampm";
+var ampm = document.createElement("h1"); ampm.className = "ampm";
 timeDiv.appendChild(ampm);
 
 update();

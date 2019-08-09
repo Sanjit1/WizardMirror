@@ -1,11 +1,11 @@
-.pos-topLeft #dateTime{
+#pos-topLeft .dateTime{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: white;
     
 }
 
-.pos-topLeft #timeText{
+#pos-topLeft .timeText{
     font-family: 'Lato', sans-serif;
     font-weight: 200;
     font-size: 75px;
@@ -14,7 +14,7 @@
     display: inline;
 }
 
-.pos-topLeft #ampm{
+#pos-topLeft .ampm{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 25px;
@@ -22,3 +22,4 @@
     color: #DDDDDD;
     display: inline;  
 }
+
