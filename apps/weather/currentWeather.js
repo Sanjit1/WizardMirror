@@ -1,8 +1,11 @@
+currentWeather();
+function currentWeather(){
+
 // Config Options
-const weatherDiv = document.getElementById("pos-topRight");
+const currWeatherDiv = document.getElementById("pos-topRight");
 const tempUnit = "C"; // C or F
 const windSpeedUnit = "km/h"; // km/h or mi/h
-const weatherApiKey = "fba8cef2c152d45d1cd464705864cb5f";
+const weatherApiKey = "yourownapikey";
 const cityId = "5391832"; // refer to city.list.json, to find your city ID
 
 //Actual code
@@ -24,7 +27,7 @@ function update() {
         temp_min = kToUnit(data["main"]["temp_min"]);
         city = data["name"];
 
-        weatherDiv.innerHTML = "";
+        currWeatherDiv.innerHTML = "";
         var iconHolder = document.createElement('div'); iconHolder.className = 'iconHolder';
         var iconPic = document.createElement('img'); 
         iconPic.height = 60; iconPic.src = "apps/weather/icons/"+icon+".png"; iconHolder.appendChild(iconPic);
@@ -41,8 +44,8 @@ function update() {
         var windText = document.createElement('h1'); 
         windText.appendChild(document.createTextNode('Wind: '+wind + windSpeedUnit)); windHolder.appendChild(windText);
 
-        weatherDiv.appendChild(iconHolder); weatherDiv.appendChild(tempTextHolder); weatherDiv.appendChild(unitHolder);
-        weatherDiv.appendChild(humidityHolder); weatherDiv.appendChild(windHolder);
+        currWeatherDiv.appendChild(iconHolder); currWeatherDiv.appendChild(tempTextHolder); currWeatherDiv.appendChild(unitHolder);
+        currWeatherDiv.appendChild(humidityHolder); currWeatherDiv.appendChild(windHolder);
         
     });
     // display the results 
@@ -60,4 +63,7 @@ function kToUnit(k) {
 
 function mpsToUnit(mps) {
     return parseInt(windSpeedUnit == "km/h"? Math.round(mps*3.6) : (windSpeedUnit == "mi/h"? Math.round(mps*2.237) : 'Wrong Unit'));
+}
+
+
 }

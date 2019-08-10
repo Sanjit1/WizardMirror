@@ -1,3 +1,5 @@
+time();
+function time(){
 // Config options
 const timeDiv = document.getElementById("pos-topLeft");
 const showSeconds = false;
@@ -51,3 +53,4 @@ function update() {
 }
 
 
+}

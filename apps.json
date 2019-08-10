@@ -1,4 +1,5 @@
 {"apps":[
-    {"name":"Weather", "file":"apps/currentWeather.js", "css":"apps/weather.css"},
-    {"name":"Time", "file":"apps/time.js", "css":"apps/time.css"}
+    {"name":"Current Weather", "file":"apps/weather/currentWeather.js", "css":"apps/weather/currentWeather.css"},
+    {"name":"Current Weather", "file":"apps/weather/weatherForecast.js", "css":"apps/weather/weatherForecast.css"},
+    {"name":"Time", "file":"apps/time/time.js", "css":"apps/time/time.css"}
 ]}

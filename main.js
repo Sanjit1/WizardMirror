@@ -3,11 +3,17 @@ const url = require('url');
 const path = require('path');
 const jsonfile = require('jsonfile');
 
-const{app, BrowserWindow, Menu} = electron;
+const{app, BrowserWindow, Menu, globalShortcut} = electron;
 
 let mainWindow;
 
-app.on('ready', function(){
+app.on('ready', ()=>{
+    globalShortcut.register('CommandOrControl+E', () => {
+        app.quit();
+    });
+    globalShortcut.register('CommandOrControl+D', () => {
+        
+    });
     mainWindow = new BrowserWindow(
         {
             webPreferences: {
@@ -23,38 +29,26 @@ app.on('ready', function(){
 
     const menu = Menu.buildFromTemplate(mainMenu);
     Menu.setApplicationMenu(menu);
-    // mainWindow.removeMenu();
+    //mainWindow.removeMenu(); // comment out this line to get DEV TOOls
 });
 
 const mainMenu = [
     {
-        label: 'Something',
-        submenu:[{
-            label: 'Add Item'
-        }]
-    }
-];
-
-
-if(process.env.NODE_ENV !== 'production'){
-    mainMenu.push({
         label:'Dev Tools',
         submenu:[
             {
                 label: 'Toggle Dev Tools',
+                accelerator: 'Ctrl+',
                 click(item, focusedWindow){
                     focusedWindow.toggleDevTools();
                 }
             }
         ]
-    });
-}
+    }
+];
 
 
-jsonfile.readFile("apps.json", function (err, obj) {
-    if (err) console.error(err);
-    const appList = obj.apps;
-    console.dir(appList[1].file);
-    mainWindow.webContents.send("item:add",appList[1].file);
-  });
+
+
+
   

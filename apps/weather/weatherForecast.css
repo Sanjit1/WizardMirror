@@ -1,0 +1,45 @@
+#pos-middleRight{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: wheat;
+}
+
+.holder{
+    width: 18%;
+    height: 100%;
+    float: left;
+    border-style: solid;
+    border-color: #080808;
+    border-width: 1px;
+    border-top-color: #000000;
+    border-bottom-color: #000000;
+    position: relative;
+}
+
+.holder img {
+    margin-left: 22%;
+    margin-top: 10%;
+    width:50%;
+
+}
+
+.max {
+    font-size: 20px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.min{
+    font-size: 20px;
+    margin-top: 50px;
+    color: #BBBBBB;
+}
+
+.day{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
