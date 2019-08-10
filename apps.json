@@ -1,5 +1,37 @@
-{"apps":[
-    {"name":"Current Weather", "file":"apps/weather/currentWeather.js", "css":"apps/weather/currentWeather.css"},
-    {"name":"Current Weather", "file":"apps/weather/weatherForecast.js", "css":"apps/weather/weatherForecast.css"},
-    {"name":"Time", "file":"apps/time/time.js", "css":"apps/time/time.css"}
-]}
+{
+    "apps": [
+        {
+            "name": "Current Weather",
+            "file": "apps/weather/currentWeather.js",
+            "css": "apps/weather/currentWeather.css",
+            "config":{
+                "div": "pos-topRight",
+                "tempunit": "C",
+                "speedunit": "km/h",
+                "apikey": "yourAPIKEY",
+                "city": "5391832"
+            }
+        },
+        {
+            "name": "Weather Forecast",
+            "file": "apps/weather/weatherForecast.js",
+            "css": "apps/weather/weatherForecast.css",
+            "config":{
+                "div": "pos-middleRight",
+                "unit": "C",
+                "apikey": "youAPIKEY",
+                "city": "5391832"
+            }
+        },
+        {
+            "name": "Time",
+            "file": "apps/time/time.js",
+            "css": "apps/time/time.css",
+            "config":{
+                "div":"pos-topLeft",
+                "showseconds":false,
+                "twentyfourhourclock":false
+            }
+        }
+    ]
+}
