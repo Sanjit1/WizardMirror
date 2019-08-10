@@ -38,7 +38,7 @@ function update() {
                 
     }
     });
-setTimeout(arguments.callee, 1200000); // Loop every 20 minutes
+setTimeout(arguments.callee, 3600000); // Loop every hour
 }
 
 
@@ -46,9 +46,4 @@ setTimeout(arguments.callee, 1200000); // Loop every 20 minutes
 function kToUnit(k) {
     return parseInt((tempUnit == "C" ? Math.round(k - 273.15) : (tempUnit == "F" ? Math.round(((k - 273.15) * 9 / 5) + 32) : 'Wrong Unit')));
 }
-
-function mpsToUnit(mps) {
-    return parseInt(windSpeedUnit == "km/h"? Math.round(mps*3.6) : (windSpeedUnit == "mi/h"? Math.round(mps*2.237) : 'Wrong Unit'));
-}
-
 }

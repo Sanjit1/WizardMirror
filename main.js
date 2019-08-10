@@ -1,7 +1,6 @@
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
-const jsonfile = require('jsonfile');
 
 const{app, BrowserWindow, Menu, globalShortcut} = electron;
 
@@ -11,16 +10,15 @@ app.on('ready', ()=>{
     globalShortcut.register('CommandOrControl+E', () => {
         app.quit();
     });
-    globalShortcut.register('CommandOrControl+D', () => {
-        
-    });
     mainWindow = new BrowserWindow(
         {
             webPreferences: {
                 nodeIntegration: true
-            }
+            },
+            frame:false // remove this line and the previous comma to get DEV TOOls
         }
     );
+    mainWindow.maximize();
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'main.html'),
         protocol: 'file:',
@@ -29,7 +27,6 @@ app.on('ready', ()=>{
 
     const menu = Menu.buildFromTemplate(mainMenu);
     Menu.setApplicationMenu(menu);
-    //mainWindow.removeMenu(); // comment out this line to get DEV TOOls
 });
 
 const mainMenu = [

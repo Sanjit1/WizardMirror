@@ -19,8 +19,6 @@
   "dependencies": {
     "howler": "^2.1.2",
     "jsonfile": "^5.0.0",
-    "node-wit": "^5.0.0",
-    "save": "^2.4.0",
-    "speech-to-text": "^2.9.1"
+    "save": "^2.4.0"
   }
 }
