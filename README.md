@@ -1,2 +1,2 @@
-# MagicMirror
+# WizardMirror
  

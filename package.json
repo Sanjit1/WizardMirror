@@ -1,12 +1,13 @@
 {
-  "name": "magicmirror",
+  "name": "wizardmirror",
   "version": "1.0.0",
-  "description": "Magic Mirror",
+  "description": "Wizard Mirror",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "keywords": [
+    "Wizard",
     "Magic",
     "Mirror",
     "Smart"
