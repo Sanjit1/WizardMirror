@@ -4,7 +4,8 @@
   "description": "Wizard Mirror",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "test": "npm start"
   },
   "keywords": [
     "Wizard",
