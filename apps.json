@@ -19,7 +19,7 @@
             "config":{
                 "div": "pos-middleRight",
                 "unit": "C",
-                "apikey": "youAPIKEY",
+                "apikey": "yourAPIKEY",
                 "city": "5391832"
             }
         },
