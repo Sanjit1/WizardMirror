@@ -73,15 +73,15 @@ cd ~/node-v8.9.0-linux-armv6l/
 sudo cp -R * /usr/local/
 
 
-echo 'Downloading Magic Mirror'
+echo 'Downloading Wizard Mirror'
 echo '______________________________________________________________________________'
 echo ''
 
 cd ~
 
-git clone https://github.com/MichMich/MagicMirror
+git clone https://github.com/Sanjit1/WizardMirror
 
-cd MagicMirror
+cd WizardMirror
 
 echo 'Installing Dependencies'
 echo '______________________________________________________________________________'
