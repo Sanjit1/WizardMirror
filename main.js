@@ -14,7 +14,7 @@ app.on('ready', ()=>{
         {
             webPreferences: {
                 nodeIntegration: true
-            }//, frame:false // comment this line to get DEV TOOls
+            }, frame:false // comment this line to get DEV TOOls
         }
     );
     mainWindow.maximize();

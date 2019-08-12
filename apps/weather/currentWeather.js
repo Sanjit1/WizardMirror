@@ -29,7 +29,7 @@ function currentWeather() {
                         currWeatherDiv.innerHTML = "";
                         var iconHolder = document.createElement('div'); iconHolder.className = 'iconHolder';
                         var iconPic = document.createElement('img');
-                        iconPic.height = 60; iconPic.src = "apps/weather/icons/" + icon + ".png"; iconHolder.appendChild(iconPic);
+                        iconPic.height = 75; iconPic.src = "apps/weather/icons/" + icon + ".png"; iconHolder.appendChild(iconPic);
                         var tempTextHolder = document.createElement('div'); tempTextHolder.className = 'tempTextHolder';
                         var tempText = document.createElement('h1');
                         tempText.appendChild(document.createTextNode(temp)); tempTextHolder.appendChild(tempText);
