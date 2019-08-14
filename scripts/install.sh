@@ -105,7 +105,7 @@ echo ''
 
 echo 'Renaming appsSample.json'
 
-cp appsSample.json apps.json
+cp -n appsSample.json apps.json
 
 echo 'Opening Apps.json'
 
