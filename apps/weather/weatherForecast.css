@@ -1,11 +1,11 @@
-#pos-middleRight {
+#pos-middleRight{
     width: 100%;
     height: 100%;
     left: 0;
     color: wheat;
 }
 
-#pos-middleRight .holder{
+.holder{
     width: 18%;
     height: 100%;
     float: left;
@@ -17,14 +17,14 @@
     position: relative;
 }
 
-#pos-middleRight .holder img {
+.holder img {
     margin-left: 27%;
     margin-top: 10%;
     width:50%;
 
 }
 
-#pos-middleRight .max {
+.max {
     font-size: 20px;
     margin-top: 50px;
     float: left;
@@ -32,13 +32,13 @@
     margin-left: 10px;
 }
 
-#pos-middleRight .min{
+.min{
     font-size: 20px;
     margin-top: 50px;
     color: #BBBBBB;
 }
 
-#pos-middleRight .day{
+.day{
     font-size: 20px;
     text-align: center;
     margin: 0;
