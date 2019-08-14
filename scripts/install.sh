@@ -67,10 +67,18 @@ echo '__________________________________________________________________________
 echo ''
 
 cd ~
+
+echo 'Downloading node distribrution'
 wget https://nodejs.org/dist/v8.9.0/node-v8.9.0-linux-armv6l.tar.gz
+echo 'Unzipping'
 tar -xzf node-v8.9.0-linux-armv6l.tar.gz
 cd ~/node-v8.9.0-linux-armv6l/
+echo 'Setting up node'
 sudo cp -R * /usr/local/
+cd ~
+echo 'Node Zip no longer needed. Deleting Zip file'
+
+rm node-v8.9.0-linux-armv6l.tar.gz
 
 
 echo 'Downloading Wizard Mirror'
@@ -94,5 +102,15 @@ npm install electron --save
 echo 'Installed'
 echo '______________________________________________________________________________'
 echo ''
+
+echo 'Renaming appsSample.json'
+
+cp appsSample.json apps.json
+
+echo 'Opening Apps.json'
+
+xdg-open apps.json
+
+echo 'Opening Readme'
 
 xdg-open README.md
