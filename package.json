@@ -16,7 +16,7 @@
   "author": "Sanjit Sarda",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^6.0.1"
+    "electron": "^6.0.2"
   },
   "dependencies": {
     "howler": "^2.1.2",
