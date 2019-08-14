@@ -89,7 +89,7 @@ echo ''
 
 npm install
 
-npm insall electron --save
+npm install electron --save
 
 echo 'Installed'
 echo '______________________________________________________________________________'

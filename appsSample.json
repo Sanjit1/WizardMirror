@@ -8,7 +8,7 @@
                 "div": "pos-topRight",
                 "tempunit": "C",
                 "speedunit": "km/h",
-                "apikey": "019a736fd448ec0464f324f3f7063003",
+                "apikey": "yourAPIKEY",
                 "city": "5391832"
             }
         },
@@ -19,7 +19,7 @@
             "config":{
                 "div": "pos-middleRight",
                 "unit": "C",
-                "apikey": "019a736fd448ec0464f324f3f7063003",
+                "apikey": "yourAPIKEY",
                 "city": "5391832"
             }
         },
