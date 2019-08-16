@@ -35,6 +35,7 @@ Here are some preinstalled applications:
 [Time](apps/time) shows the current time on your WizardMirror.
 Configuration:
 There are there configurations for the time app, which can be changed from apps.json.apps["time"].config:
+
 | Setting| Possible Values| Default|  
 | :---        |    :----:   |          ---: |
 | div | [List of positions](#positions)| pos-topLeft  |
@@ -47,6 +48,7 @@ There are there configurations for the time app, which can be changed from apps.
 
 Configuration:
 There are there configurations for the time app, which can be changed from apps.json.apps["Current Weather"].config:
+
 | Setting| Possible Values| Default|  
 | :---        |    :----:   |          ---: |
 | div | [List of positions](#positions)| pos-topRight  |
@@ -60,6 +62,7 @@ There are there configurations for the time app, which can be changed from apps.
 [Weather Forecast](apps/weather) shows the weather of a certain loctaion. It updates every 3 hours
 Configuration:
 There are there configurations for the time app, which can be changed from apps.json.apps["Current Weather"].config:
+
 | Setting| Choices | Default|  
 | :---        |    :----:   |          ---: |
 | div | [List of positions](#positions)| pos-middleRight  |
