@@ -99,4 +99,5 @@ The time app is a simple app, that can be used to explain making apps for Wizard
 <div id="pos-bottomLeft"></div>
 </div>
 ```
-The content should be displayed inside the inner div, and the css should also refer to the inner div.
+The content should be displayed inside the inner div, and the css should also refer to the inner div. Here is a list of positions:
+![Positions](positions.png)
