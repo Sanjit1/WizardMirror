@@ -61,7 +61,7 @@ There are there configurations for the time app, which can be changed from `apps
 ### Weather Forecast:
 [Weather Forecast](apps/weather) shows the weather of a certain loctaion. It updates every 3 hours
 Configuration:
-There are there configurations for the time app, which can be changed from `apps.json.apps["Current Weather"].config`:
+There are there configurations for the time app, which can be changed from [`apps.json.apps["Current Weather"].config`](appsSample.json#L7):
 
 | Setting| Choices | Default|  
 | :---        |    :----:   |          ---: |
