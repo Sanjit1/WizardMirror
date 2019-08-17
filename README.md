@@ -95,14 +95,16 @@ You can make pull requests to improve WizardMirror. While improoving WizardMirro
 
 
 ## Making Apps
-To explain making apps for WizardMirror I'll explain the setup of the time app.
-The time app is a simple app, that can be used to explain making apps for WizardMirror. The time app consists of 2 files: [`time.js`](apps/time/time.js) and [`time.css`](apps/time/time.css), which is in the time folder in the apps folder. This is there, so that if `time.js` depends on another file, `foo.js`, and another app like the weather app depends on a file called `foo.js`, there will not be any conflict. `time.js` has only one function: `time()`, which is called at the start of the program. It doe not have any other global functions or variables, so that there is no confusion, with the other js files. For exapmle if there is a variable called unit in time (there is not), and there is another variable called unit in another app, like Weather, there will be a conflict. In the time funciton, there is a function that reads all the config from the [`apps.json`](appsSample.json), and uses it as user settings to produce time information tailored to the users need. Then it uses [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) to display the time. Make sure while creating a DOM object use class and not id, because otherwise there will be conflicting ID's. While writing javascript for apps, take into consideration that the file will be run from main.html, so all file references should be from [`main.html`](main.html). Just in case some other app has the same class name, make sure to also include the div in which the app functions, so that there is no conflict. For example: use something like `#pos-topLeft  .dateTime{}`. In `main.html` the positions are setup like this
-```
-<div class="pos-bottomLeft">
-<div id="pos-bottomLeft"></div>
-</div>
-```
-The content should be displayed inside the inner div, and the css should also refer to the inner div. 
+The time app is a great example for making apps. WizardMirror has some guidelines for App development, and some example links to the time app, for clarifiction:
+- Only [one funciton](apps/time/time.js#L2) should be used in a script, which should be [called at the begining](apps/time/time.js#L1) of the script. 
+- All other functions and variables should be [enclosed inside the funciton](apps/time/time.js#L14)
+- The apps sould [read for config or user settings](apps/time/time.js#L4) from [apps.json](appsSample.json#L27).
+- If your app displays content on the screen then you should have a [div option](appsSample.json#L31) in the apps.json, which allows users to easily manage where they place their apps.
+- Each [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) element should have a [className](apps/time/time.js#L25), so that you can write CSS for it, but no ids, otherwise there may be conflicting ID's.
+- Since other apps may have [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) elements with the same class names, while writing CSS, make sure that you do not just use class names or element tags. Use a [combination of the div position ID and the class name](apps/time/time.css#L1) to define CSS. Here is a list of [positions](#positions) on your WizardMirror.
+
+The javascript file of the app that will be defined in the [apps.json](appsSample.json#L28) is injected in [`main.html`](mian.html) by this [script](mian.html#L47). So you can write js for WizardMirror similar to the way you would write js for an HTML document. The only difference is since electron is rendering the js, you can use your favourite [node](https://nodejs.org/en/about/) modules. This setting is defined [here](main.js#L16). I'll create a page soon where all 3<sup>rd</sup> party apps can be 
+displayed.
 ### Positions
 Here is a list of positions, where you can place your apps
 ![Positions](positions.png)
