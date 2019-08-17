@@ -1,4 +1,3 @@
-
 # Wizard Mirror
 ![WizardMirror Logo](img/logo.png)
 
@@ -28,14 +27,14 @@ To install WizardMirror: run this on your Raspberry Pi's terminal
 
 ## Getting Started
 
-To start your WizardMirror, run `npm start` from the `WizardMirror` directory. Your WizardMirror can run apps under it, for exapmple a time app or a weather app. App settings can be set in apps.json (which is duplicated from [appsSample.json](appsSample.json) by the installation script).
+To start your WizardMirror, run `npm start` from the `WizardMirror` directory. Your WizardMirror can run apps under it, for exapmple a time app or a weather app. App settings can be set in `apps.json` (which is duplicated from [appsSample.json](appsSample.json) by the installation script).
 ![apps.json](apps.json.png)
 Here are some preinstalled applications:
 
 ### Time:
 [Time](apps/time) shows the current time on your WizardMirror.
 Configuration:
-There are there configurations for the time app, which can be changed from apps.json.apps["time"].config:
+There are there configurations for the time app, which can be changed from `apps.json.apps["time"].config`:
 
 | Setting| Possible Values| Default|  
 | :---        |    :----:   |          ---: |
@@ -43,12 +42,12 @@ There are there configurations for the time app, which can be changed from apps.
 | showSeconds| true/false | false |
 | twentyfourhourclock| true/false | false |
 
-
-### Current Weather :
+![Time Screenshot](apps/time/timeScreenshot.png)
+### Current Weather:
 [Current Weather](apps/weather) shows the weather of a certain location. It updates every 20 minutes.
 
 Configuration:
-There are there configurations for the time app, which can be changed from apps.json.apps["Current Weather"].config:
+There are there configurations for the time app, which can be changed from `apps.json.apps["Current Weather"].config`:
 
 | Setting| Possible Values| Default|  
 | :---        |    :----:   |          ---: |
@@ -58,11 +57,11 @@ There are there configurations for the time app, which can be changed from apps.
 | apikey| Free API key from [OpenWeatherMap](https://openweathermap.org/api) | None |
 | city| [City List](http://bulk.openweathermap.org/sample/city.list.json.gz) | 5391832 |
 
-
+![Current Weather Screenshot](apps/weather/currentScreenshot.png)
 ### Weather Forecast:
 [Weather Forecast](apps/weather) shows the weather of a certain loctaion. It updates every 3 hours
 Configuration:
-There are there configurations for the time app, which can be changed from apps.json.apps["Current Weather"].config:
+There are there configurations for the time app, which can be changed from `apps.json.apps["Current Weather"].config`:
 
 | Setting| Choices | Default|  
 | :---        |    :----:   |          ---: |
@@ -71,7 +70,7 @@ There are there configurations for the time app, which can be changed from apps.
 | apikey| 40$ a month API key from [OpenWeatherMap](https://openweathermap.org/api) | None |
 | city| [City List](http://bulk.openweathermap.org/sample/city.list.json.gz) | 5391832 |
 
-
+![Weather Forecast Screenshot](apps/weather/forecastScreenshot.png)
 # Hardware
 Once you have finished installing WizardMirror and configured all the software, you can move on to the hardware: the actual mirror design. 
 You will need 
