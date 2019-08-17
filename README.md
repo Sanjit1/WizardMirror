@@ -21,7 +21,7 @@ Wizard Mirror is an open source [Electronjs](https://electronjs.org) app, that c
 
 ## Installation
 
-To install WizardMirror: run this on your Raspberry Pi's terminal
+To install WizardMirror: run this on your [Raspberry PI's](https://www.raspberrypi.org/) terminal
 
 `bash -c "$(curl -sL https://raw.githubusercontent.com/Sanjit1/WizardMirror/master/scripts/install.sh)"`
 
@@ -99,11 +99,11 @@ Check out how to [contribute](#contributing) to WizardMirror.
 You can make pull requests to improve WizardMirror. While improving WizardMirror make sure that if you change any file like [`main.js`](main.js) or [`main.html`](main.html), which have line numbers cited in this readme then make sure to also include those changes in the readme and if you need help doing so, then tell me so in the pull request. If I have not seen your pull request, you can email me, and I'll try to get back asap, usually once my exams are finished ; ) . 
 
 
-## Making Apps
+# Making Apps
 The time app is a great example for making apps. WizardMirror has some guidelines for App development, and some example links to the time app, for clarifiction:
 - Only [one funciton](apps/time/time.js#L2) should be used in a script, which should be [called at the begining](apps/time/time.js#L1) of the script. 
 - All other functions and variables should be [enclosed inside the funciton](apps/time/time.js#L14)
-- The apps sould [read for config or user settings](apps/time/time.js#L4) from [apps.json](appsSample.json#L27).
+- The apps should [read for config or user settings](apps/time/time.js#L4) from [apps.json](appsSample.json#L27).
 - If your app displays content on the screen then you should have a [div option](appsSample.json#L31) in the apps.json, which allows users to easily manage where they place their apps.
 - Each [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) element should have a [className](apps/time/time.js#L25), so that you can write CSS for it, but no ids, otherwise there may be conflicting ID's.
 - Since other apps may have [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) elements with the same class names, while writing CSS, make sure that you do not just use class names or element tags. Use a [combination of the div position ID and the class name](apps/time/time.css#L1) to define CSS. Here is a list of [positions](#positions) on your WizardMirror.
