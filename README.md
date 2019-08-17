@@ -1,9 +1,9 @@
-﻿
+
 # Wizard Mirror
 ![WizardMirror Logo](img/logo.png)
 
 
-Wizard Mirror is an open source electron app, that can give a regular mirror mysterious powers!
+Wizard Mirror is an open source electron app, that can give a regular mirror mysterious powers with the help of a Raspberry Pi!
 
 # Contents
 
@@ -17,17 +17,18 @@ Wizard Mirror is an open source electron app, that can give a regular mirror mys
 - [Contribution](#Contributing)
 	- [Improve WizardMirror](#improving-wizardmirror)
 	- [Make Apps for WizardMirror](#making-apps)
+		- [Positions](#positions)
 
 
 ## Installation
 
-To install WizardMirror: run this one liner on your Raspberry Pi
+To install WizardMirror: run this on your Raspberry Pi's terminal
 
-bash -c "$(curl -sL https://raw.githubusercontent.com/Sanjit1/WizardMirror/master/scripts/install.sh)"
+`bash -c "$(curl -sL https://raw.githubusercontent.com/Sanjit1/WizardMirror/master/scripts/install.sh)"`
 
 ## Getting Started
 
-To start your WizardMirror, run `npm start` from the `WizardMirror` directory. Your WizardMirror can run apps under it, for exapmple a time app or a weather app. App settings can be set in [apps.json](apps.json) (which is duplicated from appsSample.json by the installation script).
+To start your WizardMirror, run `npm start` from the `WizardMirror` directory. Your WizardMirror can run apps under it, for exapmple a time app or a weather app. App settings can be set in apps.json (which is duplicated from [appsSample.json](appsSample.json) by the installation script).
 ![apps.json](apps.json.png)
 Here are some preinstalled applications:
 
@@ -96,11 +97,13 @@ You can make pull requests to improove WizardMirror, and If I have not seen your
 
 ## Making Apps
 To explain making apps for WizardMirror I'll explain the setup of the time app.
-The time app is a simple app, that can be used to explain making apps for WizardMirror. The time app consists of 2 files: [`time.js`](apps/time/time.js) and [`time.css`](apps/time/time.css), which is in the time folder in the apps folder. This is there, so that if `time.js` depends on another file, `foo.js`, and another app like the weather app depends on a file called `foo.js`, there will not be any conflict. `time.js` has only one function: `time()`, which is called at the start of the program. It doe not have any other global functions or variables, so that there is no confusion, with the other js files. For exapmle if there is a variable called unit in time (there is not), and there is another variable called unit in another app, like Weather, there will be a conflict. In the time funciton, there is a function that reads all the config from the [`apps.json`](apps.json), and uses it as user settings to produce time information tailored to the users need. Then it uses [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) to display the time. Make sure while creating a DOM object use class and not id, because otherwise there will be conflicting ID's. While writing javascript for apps, take into consideration that the file will be run from main.html, so all file references should be from [`main.html`](main.html). Just in case some other app has the same class name, make sure to also include the div in which the app functions, so that there is no conflict. For example: use something like `#pos-topLeft  .dateTime{}`. In `main.html` the positions are setup like this
+The time app is a simple app, that can be used to explain making apps for WizardMirror. The time app consists of 2 files: [`time.js`](apps/time/time.js) and [`time.css`](apps/time/time.css), which is in the time folder in the apps folder. This is there, so that if `time.js` depends on another file, `foo.js`, and another app like the weather app depends on a file called `foo.js`, there will not be any conflict. `time.js` has only one function: `time()`, which is called at the start of the program. It doe not have any other global functions or variables, so that there is no confusion, with the other js files. For exapmle if there is a variable called unit in time (there is not), and there is another variable called unit in another app, like Weather, there will be a conflict. In the time funciton, there is a function that reads all the config from the [`apps.json`](appsSample.json), and uses it as user settings to produce time information tailored to the users need. Then it uses [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) to display the time. Make sure while creating a DOM object use class and not id, because otherwise there will be conflicting ID's. While writing javascript for apps, take into consideration that the file will be run from main.html, so all file references should be from [`main.html`](main.html). Just in case some other app has the same class name, make sure to also include the div in which the app functions, so that there is no conflict. For example: use something like `#pos-topLeft  .dateTime{}`. In `main.html` the positions are setup like this
 ```
 <div class="pos-bottomLeft">
 <div id="pos-bottomLeft"></div>
 </div>
 ```
-The content should be displayed inside the inner div, and the css should also refer to the inner div. Here is a list of positions:
+The content should be displayed inside the inner div, and the css should also refer to the inner div. 
+### Positions
+Here is a list of positions, where you can place your apps
 ![Positions](positions.png)
