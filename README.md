@@ -34,7 +34,7 @@ Here are some preinstalled applications:
 ### Time:
 [Time](apps/time) shows the current time on your WizardMirror.
 Configuration:
-There are there configurations for the time app, which can be changed from `apps.json.apps["time"].config`:
+There are there configurations for the time app, which can be changed from [`apps.json.apps["time"].config`](appsSample.json#L30):
 
 | Setting| Possible Values| Default|  
 | :---        |    :----:   |          ---: |
@@ -61,7 +61,7 @@ There are there configurations for the time app, which can be changed from [`app
 ### Weather Forecast:
 [Weather Forecast](apps/weather) shows the weather of a certain loctaion. It updates every 3 hours
 Configuration:
-There are there configurations for the time app, which can be changed from [`apps.json.apps"Current Weather".config`](https://github.com/Sanjit1/WizardMirror/blob/165dbe49f85a05bd9519800b06c735226798957f/appsSample.json#L7):
+There are there configurations for the time app, which can be changed from [`apps.json.apps["Current Weather"].config`](appsSample.json#L19):
 
 | Setting| Choices | Default|  
 | :---        |    :----:   |          ---: |
@@ -81,10 +81,10 @@ You will need
 - Other tools
 
 What you will need to do:
-Open up your LCD Screen, attatch the mirror film on top of it, frame it, attatch the Raspberry pi and attatch it to the wall. School's starting, so I cant really do much right now, but as soon as winter break starts I'll try to make a build video.
+Open up your LCD Monitor, attatch the mirror film on top of it, frame it, attatch the Raspberry pi and attatch it to the wall. School's starting, so I cant really do much right now, but as soon as winter break starts I'll try to make a build video.
 
 ## Mirror Software:
-Here is how it works. WizardMirror uses [Electronjs](https://electronjs.org), as an HTML rendering library. The main script is [`main.js`](main.js), which uses electron to convert main.html into a desktop application. All Application processes occur in [`main.html`](main.html). `main.html` has a script, which attaches scripts and css from apps.json to the document. Electronjs allows you to use node modules in html scripts, so you will not need browserify or any client side-implementation.
+WizardMirror uses [Electronjs](https://electronjs.org), as an HTML rendering library. The main script is [`main.js`](main.js), which uses electron to convert main.html into a desktop application. [`main.html`](main.html) has a black background, and displays in white text, to give it the mirror effect. All Application processes occur in [`main.html`](main.html). `main.html` has a script, which attaches scripts and css from apps.json to the document. Electronjs allows you to use node modules in html scripts, so you will not need browserify or any client side-implementation.
 Check out how to [contribute](#contributing) to WizardMirror.
 
 
