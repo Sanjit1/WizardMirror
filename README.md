@@ -47,7 +47,7 @@ There are there configurations for the time app, which can be changed from `apps
 [Current Weather](apps/weather) shows the weather of a certain location. It updates every 20 minutes.
 
 Configuration:
-There are there configurations for the time app, which can be changed from `apps.json.apps["Current Weather"].config`:
+There are there configurations for the time app, which can be changed from [`apps.json.apps["Current Weather"].config`](appsSample.json#L7):
 
 | Setting| Possible Values| Default|  
 | :---        |    :----:   |          ---: |
