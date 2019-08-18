@@ -96,7 +96,7 @@ Check out how to [contribute](#contributing) to WizardMirror.
 # Contributing 
 
 ## Improving WizardMirror
-You can make pull requests to improve WizardMirror. While improving WizardMirror make sure that if you change any file like [`main.js`](main.js) or [`main.html`](main.html), which have line numbers cited in this readme then make sure to also include those changes in the readme and if you need help doing so, then tell me so in the pull request. If I have not seen your pull request, you can email me, and I'll try to get back asap, usually once my exams are finished ; ) . 
+You can make pull requests to improve WizardMirror. While improving WizardMirror make sure that if you change any file like [`main.js`](main.js) or [`main.html`](main.html), which have line numbers cited in this readme then make sure to also include those changes in the readme and if you need help doing so, then tell me so in the pull request. If I have not seen your pull request, you can email me, and I'll try to get back asap, usually once I'm free from school work :) . 
 
 
 # Making Apps
