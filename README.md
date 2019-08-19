@@ -94,3 +94,7 @@ You can request features for WizardMirror through its [feathub link](https://fea
 Here are requested features, you can vote for them, by clicking on the picture.
 
 [![Feature Requests](http://feathub.com/Sanjit1/WizardMirror?format=svg)](https://feathub.com/Sanjit1/WizardMirror) 
+
+# Contributing
+
+To contribute to WizardMirror, check out [Contributing](CONTRIBUTING.png)
