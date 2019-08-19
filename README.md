@@ -13,6 +13,7 @@ Wizard Mirror is an open source [Electronjs](https://electronjs.org) app, that c
 	- [Weather Forecast](#weather-forecast)
 - [Hardware](#hardware)
 - [Positions](#positions)
+- [Feature Request](#feature-request)
 
 
 ## Installation
@@ -91,3 +92,8 @@ Check out how to [contribute](#contributing) to WizardMirror.
 # Positions
 Here is a list of positions, where you can place your apps
 ![Positions](positions.png)
+
+# Feature Request
+You can request features for WizardMirror through its [feathub link](https://feathub.com/Sanjit1/WizardMirror) .
+Here are requested features, you can vote for them, by clicking on the picture.
+[![Feature Requests](http://feathub.com/Sanjit1/WizardMirror?format=svg)](https://feathub.com/Sanjit1/WizardMirror) 
