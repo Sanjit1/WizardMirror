@@ -14,6 +14,7 @@ Wizard Mirror is an open source [Electronjs](https://electronjs.org) app, that c
 - [Hardware](#hardware)
 - [Positions](#positions)
 - [Feature Request](#feature-request)
+- [Contributing](#Contributing)
 
 
 ## Installation
@@ -97,4 +98,4 @@ Here are requested features, you can vote for them, by clicking on the picture.
 
 # Contributing
 
-To contribute to WizardMirror, check out [Contributing](CONTRIBUTING.png)
+To contribute to WizardMirror, check out [Contributing](CONTRIBUTING.md)
