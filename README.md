@@ -2,7 +2,7 @@
 ![WizardMirror Logo](img/logo.png)
 
 
-Wizard Mirror is an open source [Electronjs](https://electronjs.org) app, that can give a regular mirror mysterious powers with the help of a Raspberry Pi!
+Wizard Mirror is an open-source [Electronjs](https://electronjs.org) app, that can give a regular mirror mysterious powers with the help of a Raspberry Pi!
 
 # Contents
 
@@ -14,7 +14,6 @@ Wizard Mirror is an open source [Electronjs](https://electronjs.org) app, that c
 - [Hardware](#hardware)
 - [Positions](#positions)
 - [Feature Request](#feature-request)
-- [Contributing](#Contributing)
 
 
 ## Installation
@@ -25,7 +24,7 @@ To install WizardMirror: run this on your [Raspberry PI's](https://www.raspberry
 
 ## Getting Started
 
-To start your WizardMirror, run `npm start` from the `WizardMirror` directory. Your WizardMirror can run apps under it, for example a time app or a weather app. App settings can be set in `apps.json` (which is duplicated from [appsSample.json](appsSample.json) by the installation script).
+To start your WizardMirror, run `npm start` from the `WizardMirror` directory. Your WizardMirror can run apps under it, for example, a time app or a weather app. App settings can be set in `apps.json` (which is duplicated from [appsSample.json](appsSample.json) by the installation script).
 ![apps.json](apps.json.png)
 Here are some preinstalled applications:
 
@@ -60,7 +59,7 @@ There are configurations for the time app, which can be changed from [`apps.json
 
 ![Current Weather Screenshot](apps/weather/currentScreenshot.png)
 ### Weather Forecast:
-[Weather Forecast](apps/weather) shows the weather of a certain loctaion. It updates every 3 hours.
+[Weather Forecast](apps/weather) shows the weather of a certain location. It updates every 3 hours.
 
 Configuration:
 
@@ -78,24 +77,23 @@ There are configurations for the time app, which can be changed from [`apps.json
 Once you have finished installing WizardMirror and configured all the software, you can move on to the hardware: the actual mirror design. 
 You will need 
 - LCD screen
-- 2 way mirror glass/film
+- 2-way mirror glass/film
 - Wooden frame to frame the mirror.
 - Cables to get your Raspberry Pi running and connect it to the Screen
 - Other tools
 
 What you will need to do:
-Open up your LCD Monitor, attatch the mirror film on top of it, frame it, attatch the Raspberry pi and attatch it to the wall. School's starting, so I cant really do much right now, but as soon as winter break starts I'll try to make a build video.
+Open up your LCD Monitor, attach the mirror film on top of it, frame it, attach the Raspberry pi and attach it to the wall. School's starting, so I can't do much right now, but as soon as winter break starts I'll try to make a build video.
+
+
+
+Check out how to [contribute](#contributing) to WizardMirror.
 
 # Positions
 Here is a list of positions, where you can place your apps
 ![Positions](positions.png)
 
 # Feature Request
-You can request features for WizardMirror through its [feathub link](https://feathub.com/Sanjit1/WizardMirror) .
+You can request features for WizardMirror through its [feathub link](https://feathub.com/Sanjit1/WizardMirror).
 Here are requested features, you can vote for them, by clicking on the picture.
-
 [![Feature Requests](http://feathub.com/Sanjit1/WizardMirror?format=svg)](https://feathub.com/Sanjit1/WizardMirror) 
-
-# Contributing
-
-To contribute to WizardMirror, check out [Contributing](CONTRIBUTING.md)
