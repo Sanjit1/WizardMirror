@@ -1,5 +1,8 @@
 # Wizard Mirror
-![WizardMirror Logo](logo.png =2x)
+
+<div>
+<img src="logo.png" width="250"/>
+</div>
 
 
 Wizard Mirror is an open-source [Electronjs](https://electronjs.org) app, that can give a regular mirror mysterious powers with the help of a Raspberry Pi!
