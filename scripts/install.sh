@@ -95,9 +95,13 @@ echo 'Installing Dependencies'
 echo '______________________________________________________________________________'
 echo ''
 
+npm install --save-dev electron-rebuild
+
 npm install
 
 npm install electron --save
+
+./node_modules/.bin/electron-rebuild
 
 echo 'Installed'
 echo '______________________________________________________________________________'
