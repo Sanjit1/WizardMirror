@@ -1,8 +1,14 @@
-# Wizard Mirror
 
+# Wizard Mirror
 <div>
 <img src="logo.png" width="250"/>
 </div>
+
+![badge](https://img.shields.io/badge/super%20duper%20awesome-heck%20ya-brightgreen?style=flat)
+![badge](https://img.shields.io/badge/made%20for-Raspberry%20Pi%20Users-brightgreen?style=flat)
+![badge](https://img.shields.io/badge/uses-Electronjs-brightgreen?style=flat)
+![badge](https://img.shields.io/badge/moduler-yup-22FC99?style=flat)
+
 
 
 Wizard Mirror is an open-source [Electronjs](https://electronjs.org) app, that can give a regular mirror mysterious powers with the help of a Raspberry Pi!
