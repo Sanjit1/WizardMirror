@@ -7,7 +7,7 @@
 ![badge](https://img.shields.io/badge/super%20duper%20awesome-heck%20ya-brightgreen?style=flat)
 ![badge](https://img.shields.io/badge/made%20for-Raspberry%20Pi%20Users-brightgreen?style=flat)
 ![badge](https://img.shields.io/badge/uses-Electronjs-brightgreen?style=flat)
-![badge](https://img.shields.io/badge/moduler-yup-22FC99?style=flat)
+![badge](https://img.shields.io/badge/moduler-yup-brightgreen?style=flat)
 
 
 
