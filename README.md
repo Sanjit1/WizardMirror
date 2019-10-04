@@ -8,6 +8,13 @@
 ![badge](https://img.shields.io/badge/made%20for-Raspberry%20Pi%20Users-brightgreen?style=flat)
 ![badge](https://img.shields.io/badge/uses-Electronjs-brightgreen?style=flat)
 ![badge](https://img.shields.io/badge/moduler-yup-brightgreen?style=flat)
+![badge](https://img.shields.io/github/issues/Sanjit1/WizardMirror)
+![badge](https://img.shields.io/github/forks/Sanjit1/WizardMirror)
+![badge](https://img.shields.io/github/stars/Sanjit1/WizardMirror)
+![badge](https://img.shields.io/github/license/Sanjit1/WizardMirror)
+![badge](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FSanjit1%2FWizardMirror)
+![badge](https://img.shields.io/github/languages/count/Sanjit1/WizardMirror)
+![badge](https://img.shields.io/github/languages/top/Sanjit1/WizardMirror)
 
 
 
